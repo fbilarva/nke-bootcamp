@@ -1,4 +1,4 @@
-1) kubectl apply -f 1-kubernetes-dashboard-loadbalancer
+1) kubectl apply -f 1-kubernetes-dashboard-loadbalancer.yaml
 
 2) kubectl -n kubernetes-dashboard get pods --watch
 

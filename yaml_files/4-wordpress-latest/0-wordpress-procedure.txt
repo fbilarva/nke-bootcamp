@@ -2,7 +2,7 @@
 2) kubectl create namespace wordpress
 3) kubectl -n wordpress create secret generic mysql-pass --from-literal=password=Karbon/4u
 4) kubectl create secret docker-registry nkereg --namespace=wordpress --docker-username=YOURDOCKERUSERNAME --docker-server=docker.io --docker-email=YOUREMAIL  --docker-password=YOURDOCKERTOKEN
-5) kubectl -n wordpress apply -f 1-mysql-deployment.yaml -f 2-wordpress-deployment
+5) kubectl -n wordpress apply -f 1-mysql-deployment.yaml -f 2-wordpress-deployment.yaml
 6) kubectl -n wordpress get pods
 7) kubectl -n wordpress get svc
 8) try access: http://LoadBalancerIP
